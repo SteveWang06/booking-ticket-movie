@@ -55,6 +55,7 @@ const CreateAccount = (props) => {
     };
 
     const [componentSize, setComponentSize] = useState('default');
+
     const onFormLayoutChange = ({ size }) => {
         setComponentSize(size);
     };

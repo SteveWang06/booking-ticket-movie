@@ -15,8 +15,8 @@ const Login = (props) => {
 
   const formik = useFormik({
     initialValues: {
-      taiKhoan: 'thanhtien1',
-      matKhau: 'thanhtien1',
+      taiKhoan: '',
+      matKhau: '',
     },
     validationSchema: yup.object({
       taiKhoan: yup.string().required('* Vui lòng nhập tài khoản !'),

@@ -32,6 +32,7 @@ export const getApiAccount = (page, tuKhoa) => {
 
             const res = await adminService.getAccountList(page, tuKhoa);
             dispatch(getApiAccountAction(res.data.content));
+            console.log(res.data.content);
 
         } catch (err) {
             console.log(err);
@@ -41,7 +42,7 @@ export const getApiAccount = (page, tuKhoa) => {
     };
 };
 
- // xóa tài khoản người dùng
+// xóa tài khoản người dùng
 export const fetchApiDeleteAccount = (taiKhoan) => {
     return async (dispatch) => {
         try {

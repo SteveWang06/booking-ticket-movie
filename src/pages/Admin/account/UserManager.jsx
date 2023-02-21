@@ -92,6 +92,7 @@ const UserManager = (props) => {
                 </Fragment>
             }
         },
+        
         {
             title: 'Chức năng',
             key: '5',
